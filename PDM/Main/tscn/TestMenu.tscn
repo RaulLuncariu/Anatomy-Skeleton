@@ -1,0 +1,755 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Font/Lora-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_color = Color( 1, 0.164706, 0.164706, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="TestMenu" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+margin_right = 412.0
+margin_bottom = 869.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI"]
+margin_top = 85.0
+margin_right = 412.0
+margin_bottom = 869.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ScrollContainer"]
+margin_right = 400.0
+margin_bottom = 3340.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Question1" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Which one of the answers are bones of the arm? (pick 3)"
+autowrap = true
+
+[node name="Answer1-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 130.0
+margin_right = 400.0
+margin_bottom = 171.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Sternum"
+
+[node name="Answer1-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 175.0
+margin_right = 400.0
+margin_bottom = 216.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Humerus"
+
+[node name="Answer1-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 220.0
+margin_right = 400.0
+margin_bottom = 261.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Radius"
+
+[node name="Answer1-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 265.0
+margin_right = 400.0
+margin_bottom = 306.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Skull"
+
+[node name="Answer1-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 310.0
+margin_right = 400.0
+margin_bottom = 351.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Ulna"
+
+[node name="Question2" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 355.0
+margin_right = 400.0
+margin_bottom = 438.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "How many pairs of ribs do humans have?"
+autowrap = true
+
+[node name="Answer2-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 442.0
+margin_right = 400.0
+margin_bottom = 483.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "8"
+
+[node name="Answer2-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 487.0
+margin_right = 400.0
+margin_bottom = 528.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "6"
+
+[node name="Answer2-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 532.0
+margin_right = 400.0
+margin_bottom = 573.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "12"
+
+[node name="Answer2-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 577.0
+margin_right = 400.0
+margin_bottom = 618.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "10"
+
+[node name="Answer2-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 622.0
+margin_right = 400.0
+margin_bottom = 663.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "16"
+
+[node name="Question3" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 667.0
+margin_right = 400.0
+margin_bottom = 750.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "The name of the knee bone is :"
+autowrap = true
+
+[node name="Answer3-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 754.0
+margin_right = 400.0
+margin_bottom = 795.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Skull"
+
+[node name="Answer3-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 799.0
+margin_right = 400.0
+margin_bottom = 840.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Scapula"
+
+[node name="Answer3-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 844.0
+margin_right = 400.0
+margin_bottom = 885.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Joint"
+
+[node name="Answer3-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 889.0
+margin_right = 400.0
+margin_bottom = 930.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Knee Pad"
+
+[node name="Answer3-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 934.0
+margin_right = 400.0
+margin_bottom = 975.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Pattela"
+
+[node name="Question4" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 979.0
+margin_right = 400.0
+margin_bottom = 1105.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Which one of the answers are skull parts?
+(pick 2)"
+autowrap = true
+
+[node name="Answer4-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1109.0
+margin_right = 400.0
+margin_bottom = 1150.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Frontal"
+
+[node name="Answer4-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1154.0
+margin_right = 400.0
+margin_bottom = 1195.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Occidental"
+
+[node name="Answer4-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1199.0
+margin_right = 400.0
+margin_bottom = 1240.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Orriental"
+
+[node name="Answer4-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1244.0
+margin_right = 400.0
+margin_bottom = 1285.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Temporal"
+
+[node name="Answer4-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1289.0
+margin_right = 400.0
+margin_bottom = 1330.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Zygotic"
+
+[node name="Question5" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1334.0
+margin_right = 400.0
+margin_bottom = 1460.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Between which bones can you find the metatarsal bones? (pick 2)"
+autowrap = true
+
+[node name="Answer5-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1464.0
+margin_right = 400.0
+margin_bottom = 1505.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Ulna"
+
+[node name="Answer5-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1509.0
+margin_right = 400.0
+margin_bottom = 1550.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Tatarsal"
+
+[node name="Answer5-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1554.0
+margin_right = 400.0
+margin_bottom = 1595.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Tarsal"
+
+[node name="Answer5-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1599.0
+margin_right = 400.0
+margin_bottom = 1640.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Phalange"
+
+[node name="Answer5-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1644.0
+margin_right = 400.0
+margin_bottom = 1685.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Carpals"
+
+[node name="Question6" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1689.0
+margin_right = 400.0
+margin_bottom = 1772.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "How many vertebrae does a human have?"
+autowrap = true
+
+[node name="Answer6-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1776.0
+margin_right = 400.0
+margin_bottom = 1817.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "25"
+
+[node name="Answer6-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1821.0
+margin_right = 400.0
+margin_bottom = 1862.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "36"
+
+[node name="Answer6-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1866.0
+margin_right = 400.0
+margin_bottom = 1907.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "39"
+
+[node name="Answer6-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1911.0
+margin_right = 400.0
+margin_bottom = 1952.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "28"
+
+[node name="Answer6-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 1956.0
+margin_right = 400.0
+margin_bottom = 1997.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "33"
+
+[node name="Question7" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2001.0
+margin_right = 400.0
+margin_bottom = 2084.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Which is the largest bone in the human body?"
+autowrap = true
+
+[node name="Answer7-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2088.0
+margin_right = 400.0
+margin_bottom = 2129.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Skull"
+
+[node name="Answer7-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2133.0
+margin_right = 400.0
+margin_bottom = 2174.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Vertebral column"
+
+[node name="Answer7-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2178.0
+margin_right = 400.0
+margin_bottom = 2219.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Femur"
+
+[node name="Answer7-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2223.0
+margin_right = 400.0
+margin_bottom = 2264.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Tibia"
+
+[node name="Answer7-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2268.0
+margin_right = 400.0
+margin_bottom = 2309.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Humerus"
+
+[node name="Question8" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2313.0
+margin_right = 400.0
+margin_bottom = 2439.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "What's the name of the bone at the lower end of the vertebral column?"
+autowrap = true
+
+[node name="Answer8-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2443.0
+margin_right = 400.0
+margin_bottom = 2484.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Pelvis"
+
+[node name="Answer8-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2488.0
+margin_right = 400.0
+margin_bottom = 2529.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Spine"
+
+[node name="Answer8-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2533.0
+margin_right = 400.0
+margin_bottom = 2574.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Butt"
+
+[node name="Answer8-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2578.0
+margin_right = 400.0
+margin_bottom = 2619.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Sacral Bone"
+
+[node name="Answer8-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2623.0
+margin_right = 400.0
+margin_bottom = 2664.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Rectum"
+
+[node name="Question9" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2668.0
+margin_right = 400.0
+margin_bottom = 2751.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "In how many regions is the vertebral column divided?"
+autowrap = true
+
+[node name="Answer9-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2755.0
+margin_right = 400.0
+margin_bottom = 2796.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "5"
+
+[node name="Answer9-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2800.0
+margin_right = 400.0
+margin_bottom = 2841.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "2"
+
+[node name="Answer9-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2845.0
+margin_right = 400.0
+margin_bottom = 2886.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "4"
+
+[node name="Answer9-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2890.0
+margin_right = 400.0
+margin_bottom = 2931.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "3"
+
+[node name="Answer9-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2935.0
+margin_right = 400.0
+margin_bottom = 2976.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "6"
+
+[node name="Question10" type="Label" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 2980.0
+margin_right = 400.0
+margin_bottom = 3063.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Which one of these bones have pairs? (pick 3)"
+autowrap = true
+
+[node name="Answer10-1" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3067.0
+margin_right = 400.0
+margin_bottom = 3108.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Humerus"
+
+[node name="Answer10-2" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3112.0
+margin_right = 400.0
+margin_bottom = 3153.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Ribs"
+
+[node name="Answer10-3" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3157.0
+margin_right = 400.0
+margin_bottom = 3198.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Ulna"
+
+[node name="Answer10-4" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3202.0
+margin_right = 400.0
+margin_bottom = 3243.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Sternum"
+
+[node name="Answer10-5" type="CheckBox" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3247.0
+margin_right = 400.0
+margin_bottom = 3288.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Pelvis"
+
+[node name="Finish" type="Button" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 3292.0
+margin_right = 400.0
+margin_bottom = 3340.0
+custom_fonts/font = SubResource( 3 )
+text = "Complete Test"
+
+[node name="Cancel" type="Button" parent="UI"]
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 4 )
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}

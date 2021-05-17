@@ -1,0 +1,163 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Main/Pictures/Galaxy_menu2.jpg" type="Texture" id=1]
+[ext_resource path="res://Font/NewTegomin-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Main" type="Node2D"]
+
+[node name="Backround" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Backround"]
+margin_right = 1680.0
+margin_bottom = 1050.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="Setings" type="Label" parent="UI"]
+margin_top = 120.0
+margin_right = 412.0
+margin_bottom = 237.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.00784314, 0.741176, 0.996078, 1 )
+text = "Settings Menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButtons" type="Node2D" parent="UI"]
+
+[node name="BackMenu2" type="Button" parent="UI/MenuButtons"]
+margin_top = 700.0
+margin_right = 412.0
+margin_bottom = 780.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+text = "Back to Start"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG settings" type="Label" parent="UI/MenuButtons"]
+margin_top = 237.0
+margin_right = 412.0
+margin_bottom = 296.0
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 1 )
+text = "Text bg color:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text settings" type="Label" parent="UI/MenuButtons"]
+margin_top = 430.0
+margin_right = 412.0
+margin_bottom = 444.0
+custom_fonts/font = SubResource( 1 )
+text = "Font colors:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI"]
+margin_top = 296.0
+margin_right = 412.0
+margin_bottom = 426.0
+follow_focus = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ScrollContainer"]
+margin_right = 412.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Red" type="HScrollBar" parent="UI/ScrollContainer/VBoxContainer"]
+margin_right = 412.0
+margin_bottom = 29.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Green" type="HScrollBar" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 33.0
+margin_right = 412.0
+margin_bottom = 63.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Blue" type="HScrollBar" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 67.0
+margin_right = 412.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Sample" type="ColorRect" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 100.0
+margin_right = 412.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="UI"]
+margin_top = 489.0
+margin_right = 412.0
+margin_bottom = 619.0
+follow_focus = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ScrollContainer2"]
+margin_right = 412.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Red2" type="HScrollBar" parent="UI/ScrollContainer2/VBoxContainer"]
+margin_right = 412.0
+margin_bottom = 29.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Green2" type="HScrollBar" parent="UI/ScrollContainer2/VBoxContainer"]
+margin_top = 33.0
+margin_right = 412.0
+margin_bottom = 63.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Blue2" type="HScrollBar" parent="UI/ScrollContainer2/VBoxContainer"]
+margin_top = 67.0
+margin_right = 412.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+max_value = 255.0
+
+[node name="Sample2" type="ColorRect" parent="UI/ScrollContainer2/VBoxContainer"]
+margin_top = 100.0
+margin_right = 412.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3

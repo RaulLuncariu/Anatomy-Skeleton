@@ -1,0 +1,236 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Main/tscn/Skeleton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Parts_true/Head-Base_true.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Parts_true/Neck-Up_true.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Parts_true/Spine_true.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Parts_true/Leg-Down_true.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Parts_true/Chest_true.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Parts_true/Head_true.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Parts_true/Arm-Up_true.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Parts_true/Clavicle_true.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Parts_true/Knee_true.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Parts_true/Scapula_true.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Parts_true/Chest-Plate_true.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Parts_true/Leg-Down_true_2.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Parts_true/Arm-Down_true_2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Parts_true/Neck-Middle_true.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Parts_true/Arm-Down_true.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Parts_true/Pelvis_true.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Parts_true/Fingers_true.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Parts_true/Thumbs_true.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Parts_true/Leg-Up_true.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Main/tscn/Menu1.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Main/tscn/Outer_gimble.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Main/Script/Main.gd" type="Script" id=23]
+[ext_resource path="res://Main/tscn/Menu2.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Main/tscn/Menu3.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Main/tscn/MenuText.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Main/tscn/Text_menu2.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Main/tscn/TestMenu.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Main/tscn/Score_menu.tscn" type="PackedScene" id=29]
+
+[node name="Main" type="Spatial"]
+script = ExtResource( 23 )
+
+[node name="Full" parent="." instance=ExtResource( 1 )]
+visible = false
+
+[node name="Pieces" type="Spatial" parent="."]
+
+[node name="Arm_Down2" parent="Pieces" instance=ExtResource( 14 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00416983, -0.0189654, 0.000632077 )
+visible = false
+
+[node name="Hands" parent="Pieces" instance=ExtResource( 18 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.000578225, -0.0138831, -0.00300162 )
+visible = false
+
+[node name="Leg_down2" parent="Pieces" instance=ExtResource( 13 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00082133, 0.0153871, -0.0388379 )
+visible = false
+
+[node name="Neck_piece_up2" parent="Pieces" instance=ExtResource( 3 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.003, 0.223, -0.018 )
+visible = false
+
+[node name="Feet" parent="Pieces" instance=ExtResource( 19 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00100032, 0.0780842, 0.113108 )
+visible = false
+
+[node name="Spine" parent="Pieces" instance=ExtResource( 4 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0, -0.0341382, 0.000323981 )
+visible = false
+
+[node name="Scapula" parent="Pieces" instance=ExtResource( 11 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.0112994, -0.0174563, -0.0280367 )
+visible = false
+
+[node name="Pelvis" parent="Pieces" instance=ExtResource( 17 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.00417211, -0.00068441, 0 )
+visible = false
+
+[node name="Neck_piece_down" parent="Pieces" instance=ExtResource( 15 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.001, 0.164, -0.023 )
+visible = false
+
+[node name="Leg_up" parent="Pieces" instance=ExtResource( 20 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.00227949, -0.0157403, 0.112648 )
+visible = false
+
+[node name="Leg_down1" parent="Pieces" instance=ExtResource( 5 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.0023056, -0.0047434, 0.112353 )
+visible = false
+
+[node name="Knees" parent="Pieces" instance=ExtResource( 10 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00782463, -0.0108725, 0.00853194 )
+visible = false
+
+[node name="Head" parent="Pieces" instance=ExtResource( 7 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00198141, 0.0128556, 0.0220783 )
+visible = false
+
+[node name="Neck_piece_up1" parent="Pieces" instance=ExtResource( 2 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.002, 0.228, -0.015 )
+visible = false
+
+[node name="Clavicle" parent="Pieces" instance=ExtResource( 9 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0, 0.0184958, 0.0103266 )
+visible = false
+
+[node name="Chest" parent="Pieces" instance=ExtResource( 6 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.0114753, 0.0428256, 0.113591 )
+visible = false
+
+[node name="Chest_plate" parent="Pieces" instance=ExtResource( 12 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00047091, -0.00957432, 0.0555229 )
+visible = false
+
+[node name="Arm_Up" parent="Pieces" instance=ExtResource( 8 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0.00331973, -0.00301257, 0.113628 )
+visible = false
+
+[node name="Arm_Down1" parent="Pieces" instance=ExtResource( 16 )]
+transform = Transform( 0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, -0.00611289, -0.0214599, 0.112569 )
+visible = false
+
+[node name="Outer_gimble" parent="." instance=ExtResource( 22 )]
+
+[node name="Menu3" parent="." instance=ExtResource( 25 )]
+
+[node name="Finish" parent="." instance=ExtResource( 29 )]
+position = Vector2( 0, -1 )
+
+[node name="TestMenu" parent="." instance=ExtResource( 28 )]
+position = Vector2( 0, -1 )
+
+[node name="OnlyText" parent="." instance=ExtResource( 27 )]
+
+[node name="MenuText" parent="." instance=ExtResource( 26 )]
+
+[node name="Head" parent="MenuText/UI/ScrollContainer/VBoxContainer" index="0"]
+items = [ "Skull", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Chest" parent="MenuText/UI/ScrollContainer/VBoxContainer" index="1"]
+items = [ "Ribs", null, 0, false, false, 0, 0, null, "", false ]
+
+[node name="Spine" parent="MenuText/UI/ScrollContainer/VBoxContainer" index="2"]
+items = [ "Spine", null, 0, false, false, 0, 0, null, "", false, "Pelvis", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Arms" parent="MenuText/UI/ScrollContainer/VBoxContainer" index="3"]
+items = [ "Humerus", null, 0, false, false, 0, 0, null, "", false, "Radius", null, 0, false, false, 1, 0, null, "", false, "Ulna", null, 0, false, false, 2, 0, null, "", false, "Clavicle", null, 0, false, false, 3, 0, null, "", false, "Scapula", null, 0, false, false, 4, 0, null, "", false, "Hand", null, 0, false, false, 5, 0, null, "", false ]
+
+[node name="Legs" parent="MenuText/UI/ScrollContainer/VBoxContainer" index="4"]
+items = [ "Femur", null, 0, false, false, 0, 0, null, "", false, "Tibia", null, 0, false, false, 1, 0, null, "", false, "Fibula", null, 0, false, false, 2, 0, null, "", false, "Pattela", null, 0, false, false, 3, 0, null, "", false, "Foot", null, 0, false, false, 4, 0, null, "", false ]
+
+[node name="Menu2" parent="." instance=ExtResource( 24 )]
+
+[node name="Menu1" parent="." instance=ExtResource( 21 )]
+[connection signal="pressed" from="Menu3/UI/BackMenu3" to="." method="_on_BackMenu3_pressed"]
+[connection signal="pressed" from="Menu3/UI/Zoom_in" to="." method="_on_Zoom_in_pressed"]
+[connection signal="pressed" from="Menu3/UI/Zoom_out" to="." method="_on_Zoom_out_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-1" to="." method="_on_Answer11_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-2" to="." method="_on_Answer12_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-3" to="." method="_on_Answer13_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-4" to="." method="_on_Answer14_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-5" to="." method="_on_Answer15_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-1" to="." method="_on_Answer21_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-2" to="." method="_on_Answer22_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-3" to="." method="_on_Answer23_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-4" to="." method="_on_Answer24_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-5" to="." method="_on_Answer25_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-1" to="." method="_on_Answer31_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-2" to="." method="_on_Answer32_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-3" to="." method="_on_Answer33_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-4" to="." method="_on_Answer34_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-5" to="." method="_on_Answer35_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-1" to="." method="_on_Answer41_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-2" to="." method="_on_Answer42_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-3" to="." method="_on_Answer43_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-4" to="." method="_on_Answer44_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-5" to="." method="_on_Answer45_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-1" to="." method="_on_Answer51_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-2" to="." method="_on_Answer52_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-3" to="." method="_on_Answer53_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-4" to="." method="_on_Answer54_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-5" to="." method="_on_Answer55_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-1" to="." method="_on_Answer61_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-2" to="." method="_on_Answer62_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-3" to="." method="_on_Answer63_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-4" to="." method="_on_Answer64_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-5" to="." method="_on_Answer65_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-1" to="." method="_on_Answer71_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-2" to="." method="_on_Answer72_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-3" to="." method="_on_Answer73_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-4" to="." method="_on_Answer74_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-5" to="." method="_on_Answer75_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-1" to="." method="_on_Answer81_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-2" to="." method="_on_Answer82_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-3" to="." method="_on_Answer83_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-4" to="." method="_on_Answer84_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-5" to="." method="_on_Answer85_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-1" to="." method="_on_Answer91_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-2" to="." method="_on_Answer92_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-3" to="." method="_on_Answer93_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-4" to="." method="_on_Answer94_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-5" to="." method="_on_Answer95_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-1" to="." method="_on_Answer101_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-2" to="." method="_on_Answer102_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-3" to="." method="_on_Answer103_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-4" to="." method="_on_Answer104_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-5" to="." method="_on_Answer105_pressed"]
+[connection signal="pressed" from="TestMenu/UI/ScrollContainer/VBoxContainer/Finish" to="." method="_on_Finish_pressed"]
+[connection signal="pressed" from="TestMenu/UI/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="OnlyText/UI/ScrollContainer/VBoxContainer/Wikipedia" to="." method="_on_Wikipedia_pressed"]
+[connection signal="pressed" from="OnlyText/UI/ScrollContainer/VBoxContainer/Youtube" to="." method="_on_Youtube_pressed"]
+[connection signal="pressed" from="OnlyText/UI/Back_text" to="." method="_on_Back_text_pressed"]
+[connection signal="pressed" from="OnlyText/UI/3D" to="." method="_on_3D_pressed"]
+[connection signal="pressed" from="MenuText/UI/ScrollContainer/VBoxContainer/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Menu2/UI/MenuButtons/BackMenu2" to="." method="_on_BackMenu2_pressed"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer/VBoxContainer/Red" to="." method="_on_Red_scrolling"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer/VBoxContainer/Green" to="." method="_on_Green_scrolling"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer/VBoxContainer/Blue" to="." method="_on_Blue_scrolling"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer2/VBoxContainer/Red2" to="." method="_on_Red2_scrolling"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer2/VBoxContainer/Green2" to="." method="_on_Green2_scrolling"]
+[connection signal="scrolling" from="Menu2/UI/ScrollContainer2/VBoxContainer/Blue2" to="." method="_on_Blue2_scrolling"]
+[connection signal="pressed" from="Menu1/UI/MenuButtons/Start/StartMenu/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Menu1/UI/MenuButtons/Start/StartMenu/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Menu1/UI/MenuButtons/Ch_menu/Ch_menu/3DModel" to="." method="_on_3DModel_pressed"]
+[connection signal="pressed" from="Menu1/UI/MenuButtons/Ch_menu/Ch_menu/Text" to="." method="_on_Text_pressed"]
+[connection signal="pressed" from="Menu1/UI/MenuButtons/Ch_menu/Ch_menu/Test" to="." method="_on_Test_pressed"]
+
+[editable path="Outer_gimble"]
+
+[editable path="Menu3"]
+
+[editable path="Finish"]
+
+[editable path="TestMenu"]
+
+[editable path="OnlyText"]
+
+[editable path="MenuText"]
+
+[editable path="Menu2"]
+
+[editable path="Menu1"]

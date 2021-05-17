@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Font/NewTegomin-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Main/Pictures/Galaxy_menutext.jpg" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_color = Color( 1, 0.164706, 0.164706, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[node name="MenuText" type="Node2D"]
+
+[node name="Backround" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Backround"]
+margin_right = 1033.0
+margin_bottom = 1024.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI"]
+margin_right = 412.0
+margin_bottom = 869.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ScrollContainer"]
+margin_right = 412.0
+margin_bottom = 869.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Head" type="MenuButton" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 229.0
+margin_right = 412.0
+margin_bottom = 294.0
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Head"
+flat = false
+items = [ "Skull", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Chest" type="MenuButton" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 298.0
+margin_right = 412.0
+margin_bottom = 363.0
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Rib Cage"
+flat = false
+items = [ "Ribs", null, 0, false, false, 0, 0, null, "", false, "Sternum", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Spine" type="MenuButton" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 367.0
+margin_right = 412.0
+margin_bottom = 432.0
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Spine"
+flat = false
+items = [ "Spine", null, 0, false, false, 0, 0, null, "", false, "Pelvis", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Arms" type="MenuButton" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 436.0
+margin_right = 412.0
+margin_bottom = 501.0
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Arms"
+flat = false
+items = [ "Humerus", null, 0, false, false, 0, 0, null, "", false, "Radius", null, 0, false, false, 1, 0, null, "", false, "Ulna", null, 0, false, false, 2, 0, null, "", false, "Clavicle", null, 0, false, false, 3, 0, null, "", false, "Scapula", null, 0, false, false, 4, 0, null, "", false, "Hand", null, 0, false, false, 5, 0, null, "", false ]
+
+[node name="Legs" type="MenuButton" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 505.0
+margin_right = 412.0
+margin_bottom = 570.0
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Legs"
+flat = false
+items = [ "Femur", null, 0, false, false, 0, 0, null, "", false, "Tibia", null, 0, false, false, 1, 0, null, "", false, "Fibula", null, 0, false, false, 2, 0, null, "", false, "Pattela", null, 0, false, false, 3, 0, null, "", false, "Foot", null, 0, false, false, 4, 0, null, "", false ]
+
+[node name="Back" type="Button" parent="UI/ScrollContainer/VBoxContainer"]
+margin_top = 574.0
+margin_right = 412.0
+margin_bottom = 639.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.623529, 0.14902, 1 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main/Script/Outer_gimble.gd" type="Script" id=3]
+
+[node name="Outer_gimble" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Inner_gimble" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Inner_gimble"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
