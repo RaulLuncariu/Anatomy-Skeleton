@@ -572,11 +572,11 @@ func _on_Answer103_pressed():
 
 func _on_Finish_pressed():
 	test.visible = false
-	if float(score) >= 0 and float(score) <= 4:
+	if score >= float(0) and score <= float(4):
 		$Finish/Final_score.set_text("I'm sorry but you should look again on the materials.")
-	elif float(score) > 4 and float(score) <= 8:
+	elif score > float(4) and score <= float(8):
 		$Finish/Final_score.set_text("Good but you can do better!")
-	elif float(score) > 8 and float(score) <= 10:
+	elif score > float(8) and score <= float(10):
 		$Finish/Final_score.set_text("Congratulations, you passed the test!")
 	yield(get_tree().create_timer(3),"timeout")
 	menu1.visible = true
@@ -584,6 +584,67 @@ func _on_Finish_pressed():
 	text.visible = true
 	only.visible = true
 	test.visible = true
+	wrong1 = false
+	wrong2 = false
+	wrong3 = false
+	wrong4 = false
+	wrong5 = false
+	wrong6 = false
+	wrong7 = false
+	wrong8 = false
+	wrong9 = false
+	wrong10 = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-5").pressed = false
+
 
 
 func _on_Answer11_pressed():
@@ -738,3 +799,53 @@ func _on_Cancel_pressed():
 	wrong8 = false
 	wrong9 = false
 	wrong10 = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer1-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer2-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer3-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer4-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer5-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer6-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer7-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer8-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer9-5").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-1").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-2").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-3").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-4").pressed = false
+	get_node("TestMenu/UI/ScrollContainer/VBoxContainer/Answer10-5").pressed = false
